@@ -35,7 +35,7 @@ kotlin {
         }
     }
 
-    js {
+    js(BOTH) {
         useCommonJs()
         browser {
             testTask {
