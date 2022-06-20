@@ -22,6 +22,10 @@ actual class VideoStreamTrack internal constructor(
         onSwitchCamera(deviceId)
     }
 
+    actual fun setTorchEnabled(enabled: Boolean) {
+        TODO("not implemented")
+    }
+
     override fun onSetEnabled(enabled: Boolean) {
         onTrackSetEnabled(enabled)
     }

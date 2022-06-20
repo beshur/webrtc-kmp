@@ -20,7 +20,7 @@ abstract class AbstractVideoCaptureController {
     abstract fun selectFps(): Int
 
     fun initialize(observer: CapturerObserver) {
-        textureHelper = SurfaceTextureHelper.create("VideoCapturerTextureHelper", eglBaseContext)
+        textureHelper = SurfaceTextureHelper.create("VideoCapturerTextureHelper", rootEglBase.eglBaseContext)
         videoCapturer.initialize(textureHelper, applicationContext, observer)
     }
 
